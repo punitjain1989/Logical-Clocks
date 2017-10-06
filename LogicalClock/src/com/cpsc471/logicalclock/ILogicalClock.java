@@ -1,5 +1,8 @@
 package com.cpsc471.logicalclock;
 
-public interface ILogicalClock {
+import com.cpsc471.logicalclock.events.Event;
 
+@FunctionalInterface
+public interface ILogicalClock {
+	public abstract int calculateClock(Event event);
 }
